@@ -1,2 +1,9 @@
 <app-nav />
-<app-home />
+
+<div
+    [class.mt-24]="!isItHomePath"
+    [class.container]="!isItHomePath"
+    [class.mx-auto]="!isItHomePath"
+>
+    <router-outlet />
+</div>
